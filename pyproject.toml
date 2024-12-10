@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "airbnb-clonecoding"
+version = "0.1.0"
+description = "Django +act 학습을 위한 Airbn. 강의 by. 노마드코더"
+authors = ["domini04 <sinyubi04@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.*"
+django = "^5.1.3"
+pillow = "^11.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
