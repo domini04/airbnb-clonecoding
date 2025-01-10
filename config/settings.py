@@ -39,7 +39,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'houses.apps.HousesConfig',
     'users.apps.UsersConfig',
-]
+    'rooms.apps.RoomsConfig',
+    'common.apps.CommonConfig',
+    'experiences.apps.ExperiencesConfig',
+    'categories.apps.CategoriesConfig',
+    'reviews.apps.ReviewsConfig',
+    'wishlists.apps.WishlistsConfig',
+    'bookings.apps.BookingsConfig',
+    'photos.apps.PhotosConfig',
+    'direct_messages.apps.DirectMessagesConfig',
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

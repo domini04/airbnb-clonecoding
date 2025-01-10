@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 from users.models import User
+from rooms.models import Room
 
 # Create your models here.
 class House(models.Model): #TODO: Fieldset 추가하기
@@ -19,6 +20,7 @@ class House(models.Model): #TODO: Fieldset 추가하기
     image = models.ImageField(upload_to='houses/images', blank=True, null=True)
     pets_allowed = models.BooleanField(default=False, verbose_name='Pets allowed?')
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='properties')
+    
 
     def __str__(self):
         return self.name
