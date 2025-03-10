@@ -30,8 +30,11 @@ class ExperienceAdmin(admin.ModelAdmin):
   )
 
   list_filter = ("category",)
+  search_fields = ("name", "^price", "host__username", "country", "city", "address", "description")
   
 @admin.register(Perk)
 class PerkAdmin(admin.ModelAdmin):
   """Perk Admin Definition"""
+  list_display = ("name", "details")
+  search_fields = ("name", "details")
   pass
